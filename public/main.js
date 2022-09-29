@@ -22,7 +22,7 @@ main_container.className = 'grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))]
 
 async function simpsonsList() {
   try {
-    const BASE_URL = `https://simpsons.carlosc.dev/api/simpsons?limit=${limit}&offset=${offset}&search=${search}`;
+    const BASE_URL = `${window.location.href}api/simpsons?limit=${limit}&offset=${offset}&search=${search}`;
     const response = await fetch(BASE_URL);
     const simpsons = await response.json();
     return simpsons;
