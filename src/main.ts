@@ -8,6 +8,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000/*',
+      'http://localhost:5174/*';
       'https://simpsons.carlosc.dev/*',
       'https://nestjs-simpsons-api-production.up.railway.app/*'
     ]
